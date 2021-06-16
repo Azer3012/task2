@@ -21,9 +21,11 @@ function App() {
     
   };
   const addTodoAsFavourite = () => {
-    addTodo();
+    
 
     addFavourite()
+
+   
     
   };
 
@@ -54,7 +56,7 @@ function App() {
             </button>
             <button
               style={todo.favourite ? { color: "red" } : null}
-              onClick={() => addFavourite(todo.id,todo.text.todo.favourite)}
+              onClick={() => addFavourite(todo.id,todo.text,todo.favourite)}
             >
               <i className="fa fa-heart"></i>
             </button>
